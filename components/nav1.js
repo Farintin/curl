@@ -3,6 +3,7 @@ header1Temp.innerHTML = `
 <style>
     #header1 {
         display: flex;
+        width: 100vw;
     }
 
     #header1 .col {

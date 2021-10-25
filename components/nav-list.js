@@ -9,7 +9,7 @@ navListTemp.innerHTML = `
     .nav-list .item {
         margin: 0 18px;
         font-weight: 700;
-        font-size: 81%;
+        font-size: 75%;
         text-transform: capitalize;
         letter-spacing: 2px;
     }

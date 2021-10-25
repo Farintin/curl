@@ -5,8 +5,8 @@ cartBtn1Temp.innerHTML = `
         background-color: #f00;
     }
     .cartbBtn1 .wrapper {
-        width: 82px;
-        height: 40px;
+        width: 78px;
+        height: 38px;
         display: flex;
         justify-content: center;
         align-items: center;

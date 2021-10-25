@@ -15,7 +15,8 @@ class Comp extends HTMLElement {
     if (this.selectorsMetaNode) {
       this.css = {
         bgColor: this.getAttribute("bgColor"),
-        stroke: this.getAttribute("stroke")
+        stroke: this.getAttribute("stroke"),
+        bgImg: this.getAttribute("bgImg")
       }
 
       if (this.css.bgColor) {
@@ -29,6 +30,13 @@ class Comp extends HTMLElement {
         this.strokeNodes = this.querySelectorAll(this.selectorsMetaNode.getAttribute('stroke'));
         for (let node of this.strokeNodes) {
           node.style.stroke = this.css.stroke
+        }
+      };
+      
+      if (this.css.bgImg) {
+        this.bgImgNodes = this.querySelectorAll(this.selectorsMetaNode.getAttribute('bgImg'));
+        for (let node of this.bgImgNodes) {
+          node.style.backgroundImage = `url(${this.css.bgImg})`
         }
       };
 
